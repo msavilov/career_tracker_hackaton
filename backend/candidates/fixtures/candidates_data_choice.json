@@ -1,0 +1,102 @@
+[
+ {
+   "model": "candidates.location",
+   "id": 1,
+   "fields": {"name": "Moscow"
+ }},
+ {
+   "model": "candidates.location",
+   "id": 2,
+   "fields": {"name": "Saint Petersburg"
+ }},
+ {
+   "model": "candidates.location",
+   "id": 3,
+   "fields": {"name": "Ekaterinburg"
+ }},
+ {
+   "model": "candidates.location",
+   "id": 4,
+   "fields": {"name": "Kazan"
+ }},
+ {
+   "model": "candidates.course",
+   "id": 1,
+   "fields": {"name": "Programming"
+ }},
+ {
+   "model": "candidates.course",
+   "id": 2,
+   "fields": {"name": "Data analytic"
+ }},
+ {
+   "model": "candidates.course",
+   "id": 3,
+   "fields": {"name": "Desing"
+ }},
+ {
+   "model": "candidates.course",
+   "id": 4,
+   "fields": {"name": "Marketing"
+ }},
+ {
+   "model": "candidates.course",
+   "id": 5,
+   "fields": {"name": "Management"
+ }},
+ {
+   "model": "candidates.workformat",
+   "id": 1,
+   "fields": {"name": "Remote"
+ }},
+ {
+   "model": "candidates.workformat",
+   "id": 2,
+   "fields": {"name": "Office"
+ }},
+ {
+   "model": "candidates.workformat",
+   "id": 3,
+   "fields": {"name": "Mix"
+ }},
+ {
+   "model": "candidates.employment",
+   "id": 1,
+   "fields": {"name": "Less 1"
+ }},
+ {
+   "model": "candidates.employment",
+   "id": 2,
+   "fields": {"name": "From 1 to 3"
+ }},
+ {
+   "model": "candidates.employment",
+   "id": 3,
+   "fields": {"name": "From 3 to 6"
+ }},
+ {
+   "model": "candidates.employment",
+   "id": 4,
+   "fields": {"name": "More 6"
+ }},
+ {
+   "model": "candidates.education",
+   "id": 1,
+   "fields": {"name": "High"
+ }},
+ {
+   "model": "candidates.education",
+   "id": 2,
+   "fields": {"name": "High unfinished"
+ }},
+ {
+   "model": "candidates.education",
+   "id": 3,
+   "fields": {"name": "Secondary"
+ }},
+ {
+   "model": "candidates.education",
+   "id": 4,
+   "fields": {"name": "Specialized secondary"
+ }}
+]

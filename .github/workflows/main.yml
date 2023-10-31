@@ -26,6 +26,7 @@ jobs:
         # установка flake8 и его плагинов
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         # установка зависимостей
+        pip install "setuptools<58.0.0" wheel
         pip install -r backend/requirements.txt
 
     - name: Test with flake8 and django tests

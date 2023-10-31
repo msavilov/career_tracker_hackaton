@@ -21,6 +21,7 @@ schema_view = get_schema_view(
 
 
 v1_router = DefaultRouter()
+
 # v1_router.register('vacancies', VacanciesViewSet, basename='vacancies')
 
 

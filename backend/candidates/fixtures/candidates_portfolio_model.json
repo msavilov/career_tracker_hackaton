@@ -1,0 +1,92 @@
+[
+ {
+   "model": "candidates.portfolio",
+   "id": 1,
+   "fields": {"behance": "123.behance.net",
+   "linkedin": "",
+   "github": "123.github.com",
+   "hh": "123.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 2,
+   "fields": {"behance": "",
+   "linkedin": "124.linkedin.com",
+   "github": "124.github.com",
+   "hh": "124.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 3,
+   "fields": {"behance": "125.behance.net",
+   "linkedin": "125.linkedin.com",
+   "github": "",
+   "hh": "125.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 4,
+   "fields": {"behance": "126.behance.net",
+   "linkedin": "",
+   "github": "126.github.com",
+   "hh": "126.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 5,
+   "fields": {"behance": "",
+   "linkedin": "127.linkedin.com",
+   "github": "127.github.com",
+   "hh": "",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 6,
+   "fields": {"behance": "128.behance.net",
+   "linkedin": "128.linkedin.com",
+   "github": "",
+   "hh": "128.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 7,
+   "fields": {"behance": "129.behance.net",
+   "linkedin": "",
+   "github": "129.github.com",
+   "hh": "129.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 8,
+   "fields": {"behance": "",
+   "linkedin": "130.linkedin.com",
+   "github": "130.github.com",
+   "hh": "",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 9,
+   "fields": {"behance": "131.behance.net",
+   "linkedin": "131.linkedin.com",
+   "github": "131.github.com",
+   "hh": "131.hh.ru",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.portfolio",
+   "id": 10,
+   "fields": {"behance": "132.behance.net",
+   "linkedin": "132.linkedin.com",
+   "github": "",
+   "hh": "",
+   "created_at": "2023-10-30 20:20"
+ }}
+]

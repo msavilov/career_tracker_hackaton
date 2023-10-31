@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.core.validators import MinLengthValidator, RegexValidator
 from django.db.models import (SET_NULL, CharField, DateTimeField, EmailField,
-                              ForeignKey, ImageField, IntegerField, Model,
-                              TextField,)
+                              ForeignKey, ImageField, IntegerField,
+                              ManyToManyField, Model, TextField,)
 
 
 class Location(Model):
@@ -186,13 +186,9 @@ class Contact(Model):
 
 
 class Experience(Model):
-    candidate = ForeignKey(
-        'Candidate',
-        on_delete=SET_NULL,
-        null=True,
-        blank=True,
-        related_name='experience_candidate',
-    )
+    """"
+    Модель, описывающая предыдущие места работы соискателя
+    """
     company = CharField(
         max_length=settings.MAX_LENGTH,
         verbose_name='Название компании',
@@ -223,6 +219,11 @@ class Candidate(Model):
         verbose_name='Фамилия и имя кандидата',
         max_length=settings.MAX_LENGTH,
     )
+    age = IntegerField(
+        verbose_name='Возраст кандидата',
+        null=True,
+        blank=True,
+    )
     specialization = CharField(
         verbose_name='Должность',
         max_length=settings.MAX_LENGTH,
@@ -251,24 +252,21 @@ class Candidate(Model):
         blank=True,
         verbose_name='Лет опыта',
     )
-    experience = ForeignKey(
+    experience = ManyToManyField(
         Experience,
-        on_delete=SET_NULL,
-        null=True,
+        through='CandidateExperience',
         blank=True,
         related_name='candidate_experience',
     )
-    work_format = ForeignKey(
+    work_format = ManyToManyField(
         WorkFormat,
-        on_delete=SET_NULL,
-        null=True,
+        through='CandidateWorkFormat',
         blank=True,
         related_name='candidate_work_format',
     )
-    employment = ForeignKey(
+    employment = ManyToManyField(
         Employment,
-        on_delete=SET_NULL,
-        null=True,
+        through='CandidateEmployment',
         blank=True,
         related_name='candidate_employment',
     )
@@ -320,3 +318,75 @@ class Candidate(Model):
 
     def __str__(self):
         return self.name
+
+
+class CandidateEmployment(Model):
+    candidate = ForeignKey(
+        Candidate,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='candidate_employ',
+        verbose_name='Соискатель'
+    )
+    employment = ForeignKey(
+        Employment,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='cand_employment',
+        verbose_name='Опыт соискателя'
+    )
+
+    def __str__(self):
+        return f'{self.candidate} {self.employment}'
+
+    class Meta:
+        verbose_name = 'Связь кандидата cо его опытом'
+        verbose_name_plural = 'Связи кандидата cо его опытом'
+
+
+class CandidateWorkFormat(Model):
+    candidate = ForeignKey(
+        Candidate,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='candidate_work',
+        verbose_name='Соискатель'
+    )
+    workformat = ForeignKey(
+        WorkFormat,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='cand_workformat',
+        verbose_name='Формат работы'
+    )
+
+    def __str__(self):
+        return f'{self.candidate} {self.workformat}'
+
+    class Meta:
+        verbose_name = 'Связь кандидата c форматом работы'
+        verbose_name_plural = 'Связи кандидата c форматом работы'
+
+
+class CandidateExperience(Model):
+    candidate = ForeignKey(
+        Candidate,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='candidate_exper',
+        verbose_name='Соискатель'
+    )
+    experience = ForeignKey(
+        Experience,
+        null=True,
+        on_delete=SET_NULL,
+        related_name='cand_experience',
+        verbose_name='Опыт работы на предыдущем месте работы соискателя'
+    )
+
+    def __str__(self):
+        return f'{self.candidate} {self.experience}'
+
+    class Meta:
+        verbose_name = 'Связь кандидата с предыдущим местом работы'
+        verbose_name_plural = 'Связи кандидата с предыдущими местами работы'

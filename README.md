@@ -98,6 +98,13 @@ Cоздание сервиса, который предоставит возмо
    python manage.py makemigrations vacancies
    python manage.py migrate
    ```
+
+Заполнить БД первоначальными данными
+
+   ```python
+   python manage.py loaddata candidates/fixtures/*.json
+   python manage.py loaddata vacancies/fixtures/*.json
+   ```
 2. Создание суперпользователя: ввести команду 'python manage.py createsuperuser'
 
    ```python

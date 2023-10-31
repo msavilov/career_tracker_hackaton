@@ -1,0 +1,82 @@
+[
+ {
+   "model": "candidates.contact",
+   "id": 1,
+   "fields": {"phone": "8(123)123-1212",
+   "email": "",
+   "telegram": "test123",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 2,
+   "fields": {"phone": "8(123)123-1213",
+   "email": "12346@mail.ru",
+   "telegram": "",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 3,
+   "fields": {"phone": "",
+   "email": "12347@mail.ru",
+   "telegram": "test125",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 4,
+   "fields": {"phone": "8(123)123-1215",
+   "email": "12348@mail.ru",
+   "telegram": "test126",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 5,
+   "fields": {"phone": "8(123)123-1216",
+   "email": "12349@mail.ru",
+   "telegram": "",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 6,
+   "fields": {"phone": "8(123)123-1217",
+   "email": "",
+   "telegram": "test128",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 7,
+   "fields": {"phone": "8(123)123-1218",
+   "email": "12351@mail.ru",
+   "telegram": "test129",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 8,
+   "fields": {"phone": "8(123)123-1219",
+   "email": "12352@mail.ru",
+   "telegram": "",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 9,
+   "fields": {"phone": "",
+   "email": "12353@mail.ru",
+   "telegram": "test131",
+   "created_at": "2023-10-30 20:20"
+ }},
+ {
+   "model": "candidates.contact",
+   "id": 10,
+   "fields": {"phone": "8(123)123-1221",
+   "email": "12354@mail.ru",
+   "telegram": "",
+   "created_at": "2023-10-30 20:20"
+ }}
+]
